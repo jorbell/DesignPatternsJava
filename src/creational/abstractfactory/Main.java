@@ -5,27 +5,25 @@ public class Main {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         
-        Jasper jasper = new Jasper();
+        Customer customer = new Customer();
         AbstractFactory factory = new AdidasFactory();
-        //Puetaan jasper Adidakseen
-        jasper.setPants(factory.createPants());
-        jasper.setShoes(factory.createShoes());
-        jasper.setShirt(factory.createShirt());
-        jasper.setHat(factory.createHat());
+        //Puetaan customer Adidakseen
+        customer.setPants(factory.createPants());
+        customer.setShoes(factory.createShoes());
+        customer.setShirt(factory.createShirt());
+        customer.setHat(factory.createHat());
 
-        System.out.println("Jasperilla on "+jasper.getHat().toString()+", "+jasper.getShirt().toString()+", "+
-               jasper.getPants().toString()+" sekä "+jasper.getShoes().toString());
+        System.out.println("The customer is wearing"+customer.getHat().toString()+", "+customer.getShirt().toString()+", "+
+               customer.getPants().toString()+" and "+customer.getShoes().toString());
 
-        //Puetaan jasper Bossiin
         factory = new BossFactory();
-        //Puetaan jasper Adidakseen
-        jasper.setPants(factory.createPants());
-        jasper.setShoes(factory.createShoes());
-        jasper.setShirt(factory.createShirt());
-        jasper.setHat(factory.createHat());
+        customer.setPants(factory.createPants());
+        customer.setShoes(factory.createShoes());
+        customer.setShirt(factory.createShirt());
+        customer.setHat(factory.createHat());
 
-        System.out.println("Jasperilla on "+jasper.getHat().toString()+", "+jasper.getShirt().toString()+", "+
-               jasper.getPants().toString()+" sekä "+jasper.getShoes().toString());
+        System.out.println("The customer is wearing"+customer.getHat().toString()+", "+customer.getShirt().toString()+", "+
+               customer.getPants().toString()+" and "+customer.getShoes().toString());
         
     }
 

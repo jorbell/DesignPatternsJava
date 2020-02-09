@@ -1,5 +1,5 @@
 package creational.abstractfactory;
-public class Jasper {
+public class Customer {
 
     private Shirt shirt;
     private Hat hat;
